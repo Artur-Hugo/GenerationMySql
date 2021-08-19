@@ -28,13 +28,14 @@ insert into tb_Pizza (nome, preco, Acompanhamentocombebida, Exclusiva,id_categor
 
 select * from tb_Pizza;
 
-select * from tb_pizza where preco > 45;
-select * from tb_pizza where preco >= 29 and preco <= 60;
-select * from tb_pizza where nome like 'c%';
+select nome, preco, Acompanhamentocombebida, Exclusiva from tb_pizza where preco > 45;
+select nome, preco, Acompanhamentocombebida, Exclusiva from tb_pizza where preco >= 29 and preco <= 60;
+select nome, preco, Acompanhamentocombebida, Exclusiva from tb_pizza where nome like 'c%';
 
-select * from tb_pizza inner join tb_categoria on  tb_categoria.id = tb_pizza.id_categoria;
+select nome, preco, Acompanhamentocombebida, Exclusiva, tipo, carne_cara from tb_pizza inner join tb_categoria on  tb_categoria.id = tb_pizza.id_categoria;
 
-select * from tb_pizza inner join tb_categoria on  tb_categoria.id = tb_pizza.id_categoria where tipo like '%doce%';
+select nome, preco, Acompanhamentocombebida, Exclusiva, tipo, carne_cara from tb_pizza inner join tb_categoria on  tb_categoria.id = tb_pizza.id_categoria where tipo like '%doce%';
+
 
 
 

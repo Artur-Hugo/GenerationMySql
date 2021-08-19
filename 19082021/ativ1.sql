@@ -75,8 +75,8 @@ select nome, ataque, defesa, vida from tb_personagem where ataque >= 2000;
 select nome, ataque, defesa, vida from tb_personagem where defesa between 1000 and 2000;
 select nome, ataque, defesa, vida from tb_personagem where nome like "%c";
 
-select * from tb_personagem inner join
+select nome, ataque, defesa, vida, elemento, Profissao from tb_personagem inner join
 tb_classe on tb_classe.id = tb_personagem.id_personagem;
 
-select * from tb_personagem inner join
+select nome, ataque, defesa, vida, elemento, Profissao from tb_personagem inner join
 tb_classe on tb_classe.id = tb_personagem.id_personagem where profissao like '%arqueiro%';
